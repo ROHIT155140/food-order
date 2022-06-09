@@ -1,0 +1,10 @@
+<div *ngIf = "Tag" [style.justifyContent]="justifyContent">
+    <a routerLink="/tag/{{tag.name}}" *ngFor="let tag of Tag">{{tag.name}} {{tag.count}}</a>
+
+</div>
+
+<div *ngIf = "foodPagetags" [style.justifyContent]="justifyContent">
+    <a routerLink="/tag/{{tag}}" *ngFor="let tag of foodPagetags">{{tag}} {{tag}}</a>
+
+</div>
+
